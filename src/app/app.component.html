@@ -5,6 +5,7 @@
     <a mat-button routerLink="signin" routerLinkActive="active" *ngIf="(isAuthenticated$ | async) === false">Signin</a>
     <a mat-button mat-raised-button routerLink="signup" routerLinkActive="active" *ngIf="(isAuthenticated$ | async)===false">Signup</a>
   </span>
+  <app-change-theme></app-change-theme>
 </mat-toolbar>
 
 <router-outlet></router-outlet>

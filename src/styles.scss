@@ -1,4 +1,9 @@
 /* Copyright Ta merge la branche */
+@use 'themes.scss';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    background-color: var(--main-theme);
+}

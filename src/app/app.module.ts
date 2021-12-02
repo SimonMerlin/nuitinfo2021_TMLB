@@ -15,6 +15,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { UiToggleService } from './shared/service/ui-toggle.service';
+import { ChangeThemeComponent } from './shared/components/change-theme/change-theme.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 
 export function themeFactory(themeService: UiToggleService) {
   return () => themeService.setThemeOnStart();
@@ -25,7 +28,8 @@ export function themeFactory(themeService: UiToggleService) {
     AppComponent,
     SignInComponent,
     SignUpComponent,
-    AuthenticatedComponent
+    AuthenticatedComponent,
+    ChangeThemeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ export function themeFactory(themeService: UiToggleService) {
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSlideToggleModule
   ],
   providers: [
     UiToggleService,
