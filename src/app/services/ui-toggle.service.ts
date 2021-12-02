@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { timingSafeEqual } from 'crypto';
 import { BehaviorSubject } from 'rxjs';
 import { ThemeMode } from '../models/theme-mode.enum';
 
@@ -33,7 +32,11 @@ export class UiToggleService {
    * Change theme mode
    */
   toggle(): void {
-
+    if (this.darkThemeSelected) {
+      this.setLightTheme();
+    } else {
+      this.setDarkTheme();
+    }
   }
 
   /**
