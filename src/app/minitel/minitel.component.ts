@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { User } from '../shared/model/User.model';
 
 @Component({
   selector: 'app-minitel',
@@ -15,7 +16,8 @@ export class MinitelComponent implements OnInit {
 
   ngOnInit(): void {
      // application
-     this.welcomeMessage += this.name;
+     var user: User = JSON.parse(localStorage.getItem("user")!);
+     this.welcomeMessage += user.username;
     var speed = 75;
     var delay = this.welcomeMessage.length * speed + speed;
     this.typeEffect(speed);

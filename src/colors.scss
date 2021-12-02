@@ -1,8 +1,10 @@
+
 /* Copyright Ta merge la branche */
 
 $main-theme-light: #fff;
 $main-theme-dark: #000;
 
 $colors: (
-    --main-theme: ( $main-theme-light, $main-theme-dark )
+    --main-theme: ( $main-theme-light, $main-theme-dark ),
+    --font-theme: ( $main-theme-dark, $main-theme-light)
 );

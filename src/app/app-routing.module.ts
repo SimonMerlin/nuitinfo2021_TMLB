@@ -9,7 +9,7 @@ import { MinitelComponent } from './minitel/minitel.component';
 const routes: Routes = [
   { path: 'signin', component: SignInComponent },
   { path: 'authenticated', component: AuthenticatedComponent, canActivate: [AuthentGuard]},
-  { path: 'home', component: MinitelComponent, canActivate: [AuthentGuard]},
+  { path: 'home', component: MinitelComponent},
   { path: 'signup', component: SignUpComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'signin' },
 

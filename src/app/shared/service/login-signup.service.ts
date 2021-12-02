@@ -29,7 +29,7 @@ export class LoginSignupService {
   user$: Subject<User> = new Subject();
 
   signUp(user: User): void{
-    user.secret = Speakeasy.generateSecret();
+    // user.secret = Speakeasy.generateSecret();
 
     if(localStorage.getItem(this.key)){
       let users: User[] = JSON.parse(localStorage.getItem(this.key)!)
@@ -55,7 +55,7 @@ export class LoginSignupService {
         localStorage.setItem('logged', 'true');
         localStorage.setItem('user', JSON.stringify(userFind));
         this.snackBar.open('signin success', '', {duration: 2000});
-        this.router.navigate(['authenticated'])
+        this.router.navigate(['home'])
         return true;
       }else{
         this.snackBar.open('signin failed', '', {duration: 2000});
