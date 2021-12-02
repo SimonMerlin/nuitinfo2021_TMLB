@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
+import { MinitelComponent } from './minitel/minitel.component';
 
 const routes: Routes = [
   { path: 'signin', component: SignInComponent },
   { path: 'authenticated', component: AuthenticatedComponent, canActivate: [AuthentGuard]},
+  { path: 'home', component: MinitelComponent, canActivate: [AuthentGuard]},
   { path: 'signup', component: SignUpComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'signin' },
 

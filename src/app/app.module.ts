@@ -13,10 +13,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { UiToggleService } from './shared/service/ui-toggle.service';
 import { ChangeThemeComponent } from './shared/components/change-theme/change-theme.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MinitelComponent } from './minitel/minitel.component';
 
 
 export function themeFactory(themeService: UiToggleService) {
@@ -29,7 +30,8 @@ export function themeFactory(themeService: UiToggleService) {
     SignInComponent,
     SignUpComponent,
     AuthenticatedComponent,
-    ChangeThemeComponent
+    ChangeThemeComponent,
+    MinitelComponent
   ],
   imports: [
     BrowserModule,
