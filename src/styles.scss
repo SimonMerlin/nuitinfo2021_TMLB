@@ -4,6 +4,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.animate-colors-transition {
+    transition: color 0.5s, background 0.5s; 
+}
+
 body {
     background-color: var(--main-theme);
 }
