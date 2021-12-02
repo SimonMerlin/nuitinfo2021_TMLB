@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { ThemeMode } from '../models/theme-mode.enum';
+import { ThemeMode } from '../model/theme-mode.enum';
 
 @Injectable({
   providedIn: 'root'
