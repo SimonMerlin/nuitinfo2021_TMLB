@@ -1,8 +1,9 @@
 <mat-toolbar color="primary" class="app-header">
   <div><a href="#" target="_blank" class="positronx">TMLB 2021</a></div>
   <span class="nav-tool-items">
-    <a mat-button routerLink="signin" routerLinkActive="active">Signin</a>
-    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Signup</a>
+    <a mat-button mat-raised-button (click)="logout()" routerLinkActive="active" *ngIf="(isAuthenticated$ | async)">Logout</a>
+    <a mat-button routerLink="signin" routerLinkActive="active" *ngIf="(isAuthenticated$ | async) === false">Signin</a>
+    <a mat-button mat-raised-button routerLink="signup" routerLinkActive="active" *ngIf="(isAuthenticated$ | async)===false">Signup</a>
   </span>
 </mat-toolbar>
 
