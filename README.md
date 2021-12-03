@@ -8,6 +8,12 @@ Nom complet du groupe : Ta Merge La Branche
 
 # Défis relevés
 
+De manière générale, le projet permet de:
+* S'inscrire puis de se connecter et de déconnecter pour accèder à l'application.
+* Une fois inscrit, accèder à une page unique reprenant l'idée d'un minitel. On peut y inscrire des recherches et espérer qu'un résultats nous reviennent ;)
+
+Une attention a été portée au maximum sur le nombre de librairie utilisée pour en faire un livrable le plus petit possible. Pour des raisons d'utilisations de resources (et de temps...) l'application est serverless ce qui la rend en plus green !! Utilisation d'un build-optimizer pour réduire la taille du bundle final. Au final moins de 10Mo
+
 ## Come to the dark side (cat-amania)
 
 Pour remporter ce défi il faudra, évidement, fournir votre application avec un thème sombre. Un thème clair est disponible, le changement de thème se fait en live, la transition ne doit pas être choquante.
@@ -32,7 +38,7 @@ cd nuitinfo2021_TMLB
 
 npm install
 
-npm start
+npm run start
 
 # Lien vers le site hébergé
 

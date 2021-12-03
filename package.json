@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --build-optimizer",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,14 +22,8 @@
     "@angular/platform-browser-dynamic": "~11.2.6",
     "@angular/router": "~11.2.6",
     "angular-konami": "^0.2.0",
-    "authy": "^1.4.0",
-    "crypto-browserify": "^3.12.0",
     "ngx-konami": "^1.7.1",
-    "node-2fa": "^2.0.3",
-    "qrcode": "^1.5.0",
     "rxjs": "~6.6.0",
-    "speakeasy": "^2.0.0",
-    "thirty-two": "^1.0.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
