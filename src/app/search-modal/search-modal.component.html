@@ -1,0 +1,10 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Vos résultats</mat-card-title>
+    <mat-card-subtitle>Pour accèder à vos résultats de recherche, cliquez sur le lien</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <a target="_blank" [href]="data.url">{{data.url}}</a>
+  </mat-card-content>
+</mat-card>

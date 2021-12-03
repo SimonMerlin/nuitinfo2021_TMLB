@@ -6,6 +6,7 @@
   color: var(--font-theme);
   background-color: var(--main-theme);
   transition: color 0.5s, background 0.5s;
+  caret-shape: underscore;
 }
 
 .welcomeMessage {

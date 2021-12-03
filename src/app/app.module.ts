@@ -12,14 +12,14 @@ import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { AuthenticatedComponent } from './authenticated/authenticated.component';
 import { UiToggleService } from './shared/service/ui-toggle.service';
 import { ChangeThemeComponent } from './shared/components/change-theme/change-theme.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MinitelComponent } from './minitel/minitel.component';
 import { KonamiModule } from 'ngx-konami';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { SearchModalComponent } from './search-modal/search-modal.component';
 
 
 export function themeFactory(themeService: UiToggleService) {
@@ -31,9 +31,9 @@ export function themeFactory(themeService: UiToggleService) {
     AppComponent,
     SignInComponent,
     SignUpComponent,
-    AuthenticatedComponent,
     ChangeThemeComponent,
-    MinitelComponent
+    MinitelComponent,
+    SearchModalComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +48,8 @@ export function themeFactory(themeService: UiToggleService) {
     MatInputModule,
     MatSnackBarModule,
     MatSlideToggleModule,
-    KonamiModule
+    KonamiModule,
+    MatDialogModule
   ],
   providers: [
     UiToggleService,
