@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "node workaround.js"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +21,9 @@
     "@angular/platform-browser": "~11.2.6",
     "@angular/platform-browser-dynamic": "~11.2.6",
     "@angular/router": "~11.2.6",
+    "angular-konami":"^0.2.0",
     "crypto-browserify": "^3.12.0",
+    "ngx-konami": "^1.7.1",
     "qrcode": "^1.5.0",
     "rxjs": "~6.6.0",
     "speakeasy": "^2.0.0",
@@ -36,6 +37,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "@types/speakeasy": "^2.0.6",
+    "angular-konami": "^0.2.0",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",

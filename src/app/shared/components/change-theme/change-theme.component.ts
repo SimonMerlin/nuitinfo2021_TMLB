@@ -9,8 +9,10 @@ import { UiToggleService } from '../../service/ui-toggle.service';
 })
 export class ChangeThemeComponent implements OnInit {
 
+  private readonly ENLARGE: string = 'enlarge';
   theme: ThemeMode = ThemeMode.LIGHT;
   ThemeMode = ThemeMode;
+  enlargir: boolean = false;
 
   constructor(private themeService: UiToggleService) { }
 
@@ -25,6 +27,15 @@ export class ChangeThemeComponent implements OnInit {
    */
   changeTheme(): void {
     this.themeService.toggle();
+  }
+
+  enlarge(): void {
+    this.enlargir = !this.enlargir;
+    if(this.enlargir) {
+      document.body.classList.add(this.ENLARGE);
+    } else {
+      document.body.classList.remove(this.ENLARGE);
+    }
   }
 
 }

@@ -1,1 +1,3 @@
+<div *ngIf="!enlargir" (click)="enlarge()">+</div><div class=moins-enlargi *ngIf="enlargir" (click)="enlarge()">-</div>
 <mat-slide-toggle [checked]="theme === ThemeMode.DARK" (change)="changeTheme()"></mat-slide-toggle>
+<div (konami)="enlarge()"></div>

@@ -18,6 +18,8 @@ import { ChangeThemeComponent } from './shared/components/change-theme/change-th
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MinitelComponent } from './minitel/minitel.component';
+import { KonamiModule } from 'ngx-konami';
+
 
 
 export function themeFactory(themeService: UiToggleService) {
@@ -45,7 +47,8 @@ export function themeFactory(themeService: UiToggleService) {
     ReactiveFormsModule,
     MatInputModule,
     MatSnackBarModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    KonamiModule
   ],
   providers: [
     UiToggleService,

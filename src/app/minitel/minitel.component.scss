@@ -3,7 +3,9 @@
   height: 71%;
   margin: 1%;
   font-family: "Minitel";
-
+  color: var(--font-theme);
+  background-color: var(--main-theme);
+  transition: color 0.5s, background 0.5s;
 }
 
 .welcomeMessage {

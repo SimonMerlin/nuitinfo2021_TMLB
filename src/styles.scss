@@ -15,3 +15,31 @@ body {
   font-family: "Minitel";
   src: local("Minitel"), url(./assets/fonts/Minitel.ttf) format("truetype");
 }
+.enlarge * {
+  font-size: 30px !important;
+}
+.enlarge mat-card-title{
+  font-size: 50px !important;
+}
+
+.enlarge .mat-button-wrapper{
+  font-size: 40px !important;
+}
+
+.enlarge .positronx{
+  font-size: 40px !important;
+}
+app-change-theme {
+  display:inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1%;
+}
+
+app-change-theme mat-slide-toggle {
+  margin-left: 30%;
+}
+
+.moins-enlargi {
+  font-size: 80px !important;
+}

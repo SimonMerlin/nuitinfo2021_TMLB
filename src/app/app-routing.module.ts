@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
 import { MinitelComponent } from './minitel/minitel.component';
+import { KonamiModule } from 'ngx-konami';
 
 const routes: Routes = [
   { path: 'signin', component: SignInComponent },

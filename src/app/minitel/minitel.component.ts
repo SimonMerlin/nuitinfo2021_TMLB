@@ -8,7 +8,7 @@ import { User } from '../shared/model/User.model';
 })
 export class MinitelComponent implements OnInit {
 
-  welcomeMessage: string = "Bienvenue ! , ";
+  welcomeMessage: string = "Bienvenue ";
 
   @Input() name : string = "name";
 
@@ -17,7 +17,7 @@ export class MinitelComponent implements OnInit {
   ngOnInit(): void {
      // application
      var user: User = JSON.parse(localStorage.getItem("user")!);
-     this.welcomeMessage += user.username;
+     this.welcomeMessage += user.username + " !"; 
     var speed = 75;
     var delay = this.welcomeMessage.length * speed + speed;
     this.typeEffect(speed);
